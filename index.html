@@ -9,6 +9,11 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- External Fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- External CSS link-->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -19,24 +24,86 @@
 
       <form action="">
         <fieldset>
-          <legend>Personal Details:</legend>
+          <legend>Personal Details</legend>
 
-          <label for="name">Name: </label>
-          <input id="name" type="text" placeholder="Enter your name">
+          <div class="formElement">
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name">
+          </div>          
           
-          <label for="contact">Contact: </label>        
-          <input id="contact" type="text" placeholder="Enter your contact">
+          <div class="formElement">
+            <label for="contact">Contact:</label>        
+            <input id="contact" type="tel" placeholder="Enter your contact">
+          </div>
+                    
+          <div class="formElement">
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Enter your email">
+          </div>
+                    
+          <div class="formElement">
+            <label for="address">Address: </label>
+            <input id="email" type="text" placeholder="Enter your address">
+          </div>
           
-          <label for="email">Email: </label>
-          <input id="email" type="text" placeholder="Enter your email">
+          <label for="gender" class="formElement">Please select your gender: </label>
           
-          <label for="address">Address: </label>
-          <input id="email" type="text" placeholder="Enter your address">
+          <div class="radioBtn">
+            <input id="male" type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+          </div>
+          
+          <div class="radioBtn">
+            <input id="female" type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
 
-          <label for="gender">Please select your gender: </label>
-          <input type="radio" text="male">
-        </fieldset>        
+          <div class="radioBtn">
+            <input id="notSay" type="radio" name="gender" value="notSay">
+            <label for="notSay">Prefer not to say</label>
+          </div>         
+        </fieldset> 
+                  
+        <fieldset>
+          <legend>Questionnaire</legend>
+          <section class="questions">
+            <div>
+              <label>Q: How was the meal? </label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Very Good</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Good</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Fine</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Bad</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Worst</label>
+            </div>
+
+            <div>
+              <label>Q: How was the service? </label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Very Good</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Good</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Fine</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Bad</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Worst</label>
+            </div>
+
+            <div>
+              <label>Q: How was the ambiance? </label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Very Good</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Good</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Fine</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Bad</label>
+              <input type="radio" name="enjoyMeal" value="veryMuch"><label>Worst</label>
+              
+            </div>
+          </section>
+          
+          <div class="commentBox">
+            <label for="">Any special comments: </label>
+            <input type="text" placeholder="Please leave your comment">              
+          </div>
+        </fieldset>
       </form>
+      
+      <button>Submit</button>
     </main>
     
     <footer>

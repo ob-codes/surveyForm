@@ -26,6 +26,7 @@ html{
 /*******************************************/
 body{
   font-family: 'Alegreya Sans', sans-serif;  
+  background-color: #a28089;
 }
 /******************************************
 /* LAYOUT
@@ -39,9 +40,79 @@ h1{
   text-align: center;
 }
 
-form input{
+fieldset{
+  margin: 2% 0;
+}
+
+fieldset legend{
+  padding: 0 2%;
+  font-weight: 700;
+}
+
+.formElement{
+  padding: 0 0 2% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.formElement label{  
+  flex: 1;
+  font-weight: 700;
+  padding: 1% 0;
+}
+
+.formElement input{
+  flex: 9;
+  margin: 0 0 0 1%;
+  padding: 1% 0 1% 2%;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:15px;
+}
+
+.radioBtn{
+  padding: 2% 0 0 0;
   width: 100%;
 }
+
+.questions{
+  margin: 2% 0;
+  padding: 0 0 2% 0;
+}
+
+.questions div{
+  margin: 2% 0;
+}
+
+.questions label{
+  width: 250px;
+}
+
+.questions input{
+  margin: 0 1% 0 3%;
+}
+
+.commentBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.commentBox label{
+  flex: 1;
+}
+
+.commentBox input{
+  flex: 2;
+  height: 100px;
+}
+
+main button{
+  margin: 0 47.5%;
+  padding: 2% 0;
+  width: 100px;
+}
+/*************** Footer style ****************/
 
 footer{
   background-color: black;
@@ -49,7 +120,7 @@ footer{
   font-family: sans-serif;
   padding: 2% 0;
   width: 100%;
-  height: 160px;
+  height: 210px;
 }
 
 footer div{
